@@ -1,0 +1,18 @@
+<footer>
+  <div class="app-navbar" fxlayoutwrap fxLayoutAlign="left" layout="row">
+    <nav class="docs-navbar-header">
+       <a aria-label="Slydes" class="docs-button" routerlink="/" tabindex="0" aria-disabled="false" href="/"><span class="mat-button-wrapper">
+       <img alt="angular" class="docs-angular-logo" src="../../../assets/img/logo.png">
+       <span class="text-hide">Slydes</span>
+       </span></a>
+    </nav>
+    <div class="spacer"></div>
+    <div fxLayout fxLayout.xs="row" fxLayoutAlign="end" fxLayoutGap="20px" id="user-profile">
+      <div class="scroll-to-top" [ngClass]="{'show-scroll': navIsFixed}">
+        <button (click)="scrollToTop()">
+          <mat-icon>keyboard_arrow_up</mat-icon>
+        </button>
+    </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,60 @@
+
+<div id="login" class="container" fxLayout fxlayoutwrap fxLayout.xs="center" fxLayoutAlign="center" fxLayoutGap="0" fxLayoutGap.xs="0">
+  <div layout="row">
+    <div class="bgcolor1 rounded">
+      <div fxFlex="100">
+        <div class="row">
+        
+          <div fxFlex="100%" fxFlex.gt-sm="50%" style="padding:0 2%;">
+            <h1 class="text-hide logo text-align-center mx-auto"><span class="text-hide">Slydes.co</span></h1>
+            <img src="../../assets/img/login/banner-img.png" class="img-fluid">
+          </div>
+        <div fxFlex="100%" fxFlex.gt-sm="50%" style="padding:0 2%;" class="logintxt">
+            <h1 class="display-5">Get started with a free account</h1>
+            <p>Create a free Slydes account to send beautiful narrated presentation to sales prospects, 
+              customers, and employees. Already have a Slydes account?
+                <a class="social"  [routerLink]="['/register']" >Register here</a> </p>
+            <div class="social-btn" layout="row" fxLayout.xs="column">
+                <div fxFlex="30%"><a href="#"><img src="../../assets/img/login/slack.png"></a></div>
+                <div fxFlex="30%"><a href="#"><img src="../../assets/img/login/google-plus.png"></a></div>
+                <div fxFlex="30%"><a href="#"><img src="../../assets/img/login/linkedin.png"></a></div>
+            </div>     
+                   
+            <form fxLayout="column" fxLayoutAlign="start stretch" [formGroup]="loginForm" (submit)="login(loginForm.valid)">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <span><i class="far fa-envelope"></i></span>
+                <mat-form-field class="input-full-width">
+                  <input class="form-control login" id="email"  placeholder="Email" formControlName="email"  matInput>
+                </mat-form-field>
+                <small [hidden]="loginForm.controls.email.valid || formValid"
+          style="color:red;">
+          Email is required.
+          </small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                  <span><i class="fas fa-unlock-alt"></i></span>
+                  <mat-form-field class="input-full-width">
+                    <input type="password" class="form-control login" id="password"  matInput placeholder="Password" formControlName="password">
+                  </mat-form-field>
+                  <small [hidden]="loginForm.controls.password.valid || formValid"
+          style="color:red;">
+            Password is required .
+          </small>
+          <small [hidden]="invalidLogin"
+          style="color:red;">
+          Invalid Email or Password
+          </small>
+              </div>
+              
+              <div layout="row" style="display: flex; justify-content: center; padding: 0;">
+                <button mat-raised-button class="btn button"><span>Get Started! </span></button>
+             </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>

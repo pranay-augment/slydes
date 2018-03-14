@@ -1,0 +1,63 @@
+<header>
+<div class="app-navbar" fxlayoutwrap fxLayoutAlign="left" layout="row">
+  <nav class="docs-navbar-header">
+     <a aria-label="Slydes" class="docs-button" routerlink="/" tabindex="0" aria-disabled="false" href="/"><span class="mat-button-wrapper">
+     <img alt="angular" class="docs-angular-logo" src="../../../assets/img/logo.png">
+     <span class="text-hide">Slydes</span>
+     </span></a>
+     <div class="smhide">
+        <a class="docs-button mat-button ng-star-inserted menu" mat-button="" tabindex="0" aria-disabled="false" href="/Dashboard">
+           <span class="mat-button-wrapper weight-600">Dashboard</span>
+           <div class="mat-button-ripple mat-ripple" matripple=""></div>
+           <div class="mat-button-focus-overlay"></div>
+        </a>
+        <a class="docs-button mat-button ng-star-inserted" mat-button="" tabindex="0" aria-disabled="false" href="/Teams">
+           <span class="mat-button-wrapper weight-600">Teams</span>
+           <div class="mat-button-ripple mat-ripple" matripple=""></div>
+           <div class="mat-button-focus-overlay"></div>
+        </a>
+        <a class="docs-button mat-button ng-star-inserted" mat-button="" tabindex="0" aria-disabled="false" href="/Notifications">
+           <span class="mat-button-wrapper weight-600">Notifications<small>2</small></span>
+           <div class="mat-button-ripple mat-ripple" matripple=""></div>
+           <div class="mat-button-focus-overlay"></div>
+        </a>
+     </div>
+  </nav>
+  <div class="spacer"></div>
+  <div fxLayout fxLayout.xs="row" fxLayoutAlign="end" fxLayoutGap="20px" id="user-profile">
+     <button mat-icon-button [matMenuTriggerFor]="menu">
+        <img src="../../../assets/img/deck/profile.png">
+        <mat-icon style="color:#83c9fe;">keyboard_arrow_down</mat-icon>
+     </button>
+     <mat-menu #menu="matMenu" id="menu-panel" yPosition="below" xPosition="before">
+        <button mat-menu-item class="link-btn">
+           <mat-icon><i class="far fa-user"></i></mat-icon>
+           <span>My Profile</span>
+        </button>
+        <button mat-menu-item class="link-btn" (click)="onLogout()"> 
+           <mat-icon><i class="fas fa-power-off"></i></mat-icon>
+           <span>Sign Out</span>
+        </button>
+     </mat-menu>
+  </div>
+</div>
+<div class="smshow">
+  <div class="smmenu" fxLayout fxlayoutwrap fxLayoutAlign="center">
+     <a class="docs-button mat-button ng-star-inserted" mat-button="" tabindex="0" aria-disabled="false" href="/Dashboard">
+        <span class="mat-button-wrapper weight-600">Dashboard</span>
+        <div class="mat-button-ripple mat-ripple" matripple=""></div>
+        <div class="mat-button-focus-overlay"></div>
+     </a>
+     <a class="docs-button mat-button ng-star-inserted" mat-button="" tabindex="0" aria-disabled="false" href="/Teams">
+        <span class="mat-button-wrapper weight-600">Teams</span>
+        <div class="mat-button-ripple mat-ripple" matripple=""></div>
+        <div class="mat-button-focus-overlay"></div>
+     </a>
+     <a class="docs-button mat-button ng-star-inserted" mat-button="" tabindex="0" aria-disabled="false" href="/Notifications">
+        <span class="mat-button-wrapper weight-600">Notifications<small>2</small></span>
+        <div class="mat-button-ripple mat-ripple" matripple=""></div>
+        <div class="mat-button-focus-overlay"></div>
+     </a>
+  </div>
+</div>
+</header>

@@ -1,0 +1,41 @@
+.filter { background-color: #273142; border-bottom: 1px solid #313d4f; padding: 16px 20px; position: relative; }
+.search { padding: .25em 1em; border: 1px solid #313d4f; border-radius: 6px;  }
+.search-button { position: absolute; background: none; border: 0px solid; right:-14px; top:5px; color: #9fa2af; cursor: pointer;}
+/* do not group these rules */
+*::-webkit-input-placeholder { color: #9ba1aa !important; text-transform: uppercase; font-size: 0.75rem; }
+*:-moz-placeholder { /* FF 4-18 */ color: #9ba1aa !important; text-transform: uppercase; font-size: 0.75rem; }
+*::-moz-placeholder { /* FF 19+ */ color: #9ba1aa !important; text-transform: uppercase; font-size: 0.75rem; }
+*:-ms-input-placeholder { /* IE 10+ */ color: #9ba1aa !important; text-transform: uppercase; font-size: 0.75rem; }
+.decks-count { padding: 8px 20px; color: #7f8fa4; }
+.decks-count span { font-size: 20px; padding-right: 7px; }
+.pad-dock { padding: 100px 24px !important; }
+.pad-dock mat-grid-list { margin: 0 20px; height: 100%;}
+.pad-dock mat-card { display: block; height: 100%; clear: both; width: 100% !important; border:1px solid #273142; background: #273142; margin:0px; padding:15px 13px; border-radius: 5px; color: #fff; font-family: 'Lato', sans-serif, Font Awesome\ 5 Brands !important; }
+.pad-dock .mat-card-image:first-child, .pad-dock .mat-card-image { margin: 0px; max-width: 100%;  }
+.pad-dock mat-card-content { padding: 10px;}
+.pad-dock mat-card-content h2 { font-weight:600; margin-bottom: 0px; }
+.pad-dock mat-card-content p { color: #748297;  margin-top: 8px;}
+.pad-dock mat-card:hover, .pad-dock mat-card:focus, .pad-dock mat-card:active { border:1px solid #1875f0; touch-action: manipulation; }
+.pad-dock .mat-mini-fab { min-width: 88px; line-height: 20px; padding: 0 9px; font-family: 'Lato', sans-serif !important; color: #7c8ca5; font-size: 30px; background-color: #222c3c; border: 1px solid #313d4f; border-radius: 2px; min-width: 0; border-radius: 50%; width: 40px; height: 40px;  }
+.pad-dock mat-card-actions { padding: 0 25px 20px;}
+.pad-dock .mat-mini-fab { box-shadow:none; }
+.pad-dock .mat-mini-fab:hover, .pad-dock .mat-mini-fab:active, .pad-dock .mat-mini-fab:focus { border: 1px solid #1f95ee; color: #fff; }
+.pad-dock mat-card-actions img { border-radius: 50%; width: 40px; height: 40px; margin: 0 1px 0 6px;}
+.pad-dock .content-card { display: inline-block; height: 364px; margin-top: -48px !important; }
+@media (max-width: 643px) {
+    .mak, .decks-count { display: inline-table; width: 100%; }
+    .decks-count { display: inline-block;  padding: 8px 0px; order: 3; }
+    .order-mak {order: 2;}
+    .color1 { order: 1; margin-bottom: 15px;}
+    .filter { display: flex; flex-wrap: wrap; }
+    .spacer { display: none !important; }
+    .add-slydes { width: 40px; order: 3; position: absolute; bottom: 5px; right: 20px;}
+    .search1 { width: 100%;}
+    .pad-dock mat-grid-list { margin: 0px; }
+}
+.pad-dock button.add-btn { color:#fff; margin: 0 1px 0 6px; font-size: 13px !important; background-color: #1a91eb !important; border: 0px solid #fff; font-weight: 600 !important; font-family:'Lato', sans-serif !important; }
+.pad-dock button.add-btn:hover, .pad-dock button.add-btn:active, .pad-dock button.add-btn:focus { border: 0px solid #fff; }
+.spacer {flex: 1 1 auto; }
+.filter .mat-mini-fab { border-radius: 10% !important; margin-left: 14px; background-color: #37b148; color: #fff; box-shadow: transparent !important;}
+.filter .mat-mini-fab:not([class*="mat-elevation-z"]) { box-shadow: 0 0px 0px 0px rgba(0,0,0,.2),0 0px 0px 0 rgba(0,0,0,.14),0 0px 0px 0 rgba(0,0,0,.12) !important; }
+.share-bt { background-image: url(../../../assets/img/deck/share.png); background-size: cover; background-repeat:no-repeat; background-position: center center; }

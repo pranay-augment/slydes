@@ -1,0 +1,22 @@
+.app-navbar { position: relative; top: 0; left: 0; right: 0; z-index: 2; background: #2096ef; min-height: 72px;  font-family:'Lato', sans-serif !important;}
+.smmenu {background: #2096ef; padding: 3px 0px; color: #fff; }
+.app-navbar { color: #fff; font-family:'Lato', sans-serif !important;}
+.text-hide { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
+.docs-navbar-header { display: -webkit-box; display: -ms-flexbox; display: flex; align-items: center; padding: 8px 16px 8px 22px; }
+.mat-button, .mat-fab, .mat-flat-button, .mat-icon-button, .mat-mini-fab, .mat-raised-button, .mat-stroked-button {
+    box-sizing: border-box; position: relative; user-select: none; cursor: pointer; outline: 0; border: none; -webkit-tap-highlight-color: transparent;
+    display: inline-block; white-space: nowrap; text-decoration: none;  vertical-align: baseline; text-align: center;
+    margin: 0; min-width: 88px; line-height: 36px; padding: 0 16px; border-radius: 2px; font-family:'Lato', sans-serif !important;}
+.docs-angular-logo { height: 20px; margin: 0 4px 3px 0; vertical-align: middle; }
+.mat-button small {margin: 0; padding: 0px 6.5px; line-height: 1.635em; border-color: #ff7800; position: relative; top:-12px;
+    background: #ff7800; color: #fff; display: inline-block; font-size: 80%; font-weight: 600; vertical-align: baseline;
+    border-radius: 25px; white-space: nowrap; text-align: center;}
+.mat-icon-button { padding: 0; min-width: 0; width: 40px; height: 40px; flex-shrink: 0; line-height: 40px; border-radius: 50%; }
+.spacer {flex: 1 1 auto; }
+.menu {margin-left: 30px; }
+a.mat-button:hover { background: transparent;}
+.smshow {display: none;}
+@media (max-width: 640px) {
+.smhide {display: none;}
+.smshow {display: block; }
+}

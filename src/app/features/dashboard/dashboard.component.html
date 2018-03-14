@@ -1,0 +1,53 @@
+<div (window:resize)="onResize($event)"></div>
+<div fxlayoutwrap fxLayoutAlign="left" layout="row" fxLayout.xs="column" class="filter">
+    <mat-form-field class="mak order-mak" >
+      <mat-select  placeholder="All Decks">
+        <mat-option value="option">Option 1</mat-option>
+        <mat-option value="option">Option 2</mat-option>
+        <mat-option value="option">Option 3</mat-option>
+        <mat-option value="option">Option 4</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="decks-count"><span fxShow.xs fxHide.sm fxHide.md fxHide.lg fxHide.xl style="font-size:16px;">Total: </span><span fxHide.xs>|</span> 34 Decks</div>
+    <div class="spacer" fxHide.xs></div>
+    <div fxLayoutAlign="end" class="search1">
+        
+        <mat-form-field  class="mak color1" align-items="flex-end">
+            <input matInput placeholder="Search" matInput>
+            <button class="search-button"><i class="material-icons">search</i></button>
+          </mat-form-field>
+    </div>
+    <button mat-mini-fab class="add-slydes">
+        <mat-icon aria-label="Example icon-button with a heart icon">add</mat-icon>
+      </button>
+  </div>
+        <div class="mat-padding pad-dock" fxlayoutwrap layout="row">
+              <mat-grid-list class="mat-grid-list" [cols]="cols | async" gutterSize="15px" role="list" [rowHeight]="rowheight">
+              
+              
+                <mat-grid-tile class="content-card" role="listitem" *ngFor="let d of data">
+              <mat-card class="item">
+                  <img mat-card-image src="{{baseApiUrl}}/{{d.image_url}}" alt="slydes">
+                <mat-card-content>
+                  <h2>{{d.slide_title}}</h2>
+                  <p>Last Update: Yesterday 3:41AM</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <div layout="row" layout-align="start start" fxFlex>
+                        <span fxFlex></span>
+                        </div>
+                        <button mat-mini-fab class="share-bt" fxLayoutAlign="end start"></button>
+                </mat-card-actions>
+              </mat-card>
+            </mat-grid-tile>
+
+        
+             
+
+             
+
+              
+              
+
+            </mat-grid-list>
+</div>

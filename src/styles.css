@@ -1,1 +1,121 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+  line-height: normal;
+  font-family: 'Lato', sans-serif, Font Awesome\ 5 Brands !important;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+.mat-sidenav-content::-webkit-scrollbar, body::-webkit-scrollbar, mat-sidenav.sidenav::-webkit-scrollbar, .main-container::-webkit-scrollbar {
+  height: 6px;
+  width: 6px
+}
+
+.mat-sidenav-content::-webkit-scrollbar-trac, body::-webkit-scrollbar-track, mat-sidenav.sidenav::-webkit-scrollbar-trac, .main-container::-webkit-scrollbar-trac {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.mat-sidenav-content::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb, mat-sidenav.sidenav::-webkit-scrollbar-thumb, .main-container::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  outline: 1px solid #333
+}
+.profile_tab_blocks .mat-tab-label{
+  padding: 0 15px !important;
+  min-width: 130px !important;
+}
+.profile_tab_blocks .mat-tab-body {
+  overflow: hidden !important;
+}
+.profile_tab_blocks{
+  margin-top: -20px; 
+}
+.profile_update {
+  margin-bottom: 0 !important;
+}
+
+.snackbar{
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+.snackbar-success {   
+  color: #FFF;
+  background-color: #AACF3B;
+ }
+ .snackbar-error {   
+  color: #FFF;
+  background-color: rgb(207, 69, 59);
+ }
+ .navigation-link.active {
+  background: #AACF3B!important;
+  color: #fff;
+}
+form .mat-button-wrapper{
+  color:#FFF;
+}
+/* ------------------------------
+// Deck usermodule styling
+---------------------------------*/
+#login .mat-form-field-infix { padding: 0px !important; border-top: 0px !important;}
+#login .mat-form-field-wrapper { padding-bottom: 0px !important;}
+#login .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label,
+#login .mat-form-field-empty.mat-form-field-label { font-family: 'Lato', sans-serif !important; padding: 6px 40px; font-size: 14px; font-weight: 600; vertical-align: middle; color: #9ba1aa;}
+.mat-form-field-underline, .mat-form-field-subscript-wrapper  { display: none !important;}
+#cdk-overlay-1 {top: 64px !important; right: 20px !important; }
+#user-profile img { height: 50px; margin: 13px 0; }
+#user-profile button.mat-icon-button { width:70px; height:62px; }
+.link-btn{ font-family: 'Lato', sans-serif, Font Awesome\ 5 Brands !important; font-weight: 600 !important; color: #6C798B !important; font-size: 14px !important;}
+.mat-icon-button { background: transparent !important;}
+.fa-user, .fa-power-off { font-size:20px !important; top:-5px !important; position: relative !important; }
+.link-btn:hover { background-color:#cacaca; }
+.weight-600 { font-weight: 400 !important; font-size: 16px;}
+.cdk-overlay-backdrop { top: 0; bottom: 0; left: 0; right: 0; transition: opacity .4s cubic-bezier(.25,.8,.25,1); opacity: 0; }
+.cdk-overlay-backdrop, .cdk-overlay-pane { position: absolute; pointer-events: auto; z-index: 1000; }
+
+// div#cdk-overlay-0 .mat-form-field-infix { padding: .4375em; border-top: 0 solid transparent; }
+mat-form-field.mak .mat-select-arrow, div#cdk-overlay-0 .mat-select-value, { color: #9fa2af; }
+mat-form-field.mak  div.mat-menu-item .mat-icon { margin-right: 6px !important;}
+mat-form-field.mak  div.mat-form-field {  font-family: 'Lato', sans-serif, Font Awesome\ 5 Brands !important; color: #fff; }
+mat-form-field.mak .mat-form-field-wrapper { padding: .25em 1em; border: 1px solid #313d4f; border-radius: 6px; }
+mat-form-field.mak  div.mat-form-field-flex { align-items: center !important; }
+.mat-form-field-infix {border-top:0px solid transparent;}
+mat-form-field.mak .mat-form-field-label, mat-form-field.mak .mat-select-value-text { color: #fff; }
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) { color:#1d93ed !important; }
+.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label, .mat-form-field-empty.mat-form-field-label { -webkit-transform: none;
+  transform: none; }
+  .mat-form-field-should-float label.mat-input-placeholder { display: none !important;}
+  .mat-select-panel {
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
+}
+mat-form-field.color1 .mat-form-field-label, mat-form-field.color1 .mat-select-value-text { color: #505d6f !important; }
+.pad-dock span.mat-button-wrapper { padding: 0px; line-height: 0; }
+.mat-tooltip { background: #353c48 !important; font-size: 16px; font-family:'Lato', sans-serif; font-weight: 600;  }
+/* triangle green, first, below */
+.mat-tooltip::before { content:""; position:absolute; bottom:-10px; left: 0; right: 0; margin: auto; border-width:10px 10px 0; border-style:solid; border-color:#353c48 transparent; width: 0px; height: 0px; } 
+.pad-dock figure {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+}
+mat-card-image {
+  width: calc(100% - 70px);
+  height: calc(100% - 70px);
+}
